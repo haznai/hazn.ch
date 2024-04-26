@@ -40,7 +40,7 @@ Temporary Items
 /node_modules
 
 .env
+.envrc
 *.orig
 *.pyc
 *.swp
-
