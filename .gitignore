@@ -39,6 +39,11 @@ Temporary Items
 
 /node_modules
 
+### lume ###
+_site
+_cache
+.DS_Store
+
 .env
 .envrc
 *.orig

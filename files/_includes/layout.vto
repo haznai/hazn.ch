@@ -8,7 +8,7 @@
     <!-- Navigation -->
     <nav>
         <header>
-            <h1 ><a href="/">hazn's growth machine ⚙️✨</a></h1>
+            <h1 ><a href="/">hazn</a></h1>
         </header>
         <hr>
     </nav>
@@ -16,21 +16,69 @@
     {{ content }}
 </body>
 <style>
+      @font-face {
+            font-family: 'GeistMono';
+            src: url('./fonts/GeistMono-UltraLight.woff2') format('woff2');
+            font-weight: 100;
+        }
+        @font-face {
+            font-family: 'GeistMono';
+            src: url('./fonts/GeistMono-Thin.woff2') format('woff2');
+            font-weight: 200;
+        }
+        @font-face {
+            font-family: 'GeistMono';
+            src: url('./fonts/GeistMono-Light.woff2') format('woff2');
+            font-weight: 300;
+        }
+        @font-face {
+            font-family: 'GeistMono';
+            src: url('./fonts/GeistMono-Regular.woff2') format('woff2');
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: 'GeistMono';
+            src: url('./fonts/GeistMono-Medium.woff2') format('woff2');
+            font-weight: 500;
+        }
+        @font-face {
+            font-family: 'GeistMono';
+            src: url('./fonts/GeistMono-SemiBold.woff2') format('woff2');
+            font-weight: 600;
+        }
+        @font-face {
+            font-family: 'GeistMono';
+            src: url('./fonts/GeistMono-Bold.woff2') format('woff2');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: 'GeistMono';
+            src: url('./fonts/GeistMono-Black.woff2') format('woff2');
+            font-weight: 800;
+        }
+        @font-face {
+            font-family: 'GeistMono';
+            src: url('./fonts/GeistMono-UltraBlack.woff2') format('woff2');
+            font-weight: 900;
+        }
+
     /* basic setup */
-    html {
+    body {
         max-width: 70ch;
         line-height:1.75;
-        font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+        font-family: 'GeistMono', ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
         font-weight: normal;
         /* hack to make scrollbar appear on all pages */
         height: 101%;
-        /* larger spacing on larger screens, very small spacing on tiny screens */
-        /* shorthand for margin-left/margin-right */
+        /* center  conent */
+        margin: 0;
         margin-inline: auto;
         /* fluid sizing: https://frontaid.io/blog/fluid-typography-2d-css-locks-clamp/ */
         font-size: clamp(1.25em, 0.909em + 0.45vmin, 1.5em);
-        /* use system font stack: https://developer.mozilla.org/en-US/docs/Web/CSS/font-family */
+        /* no padding, no margin */
+        padding: 0;
     }
+
 
     /* increase line-height for everything except headings */
     body :not(:is(h1,h2,h3,h4,h5,h6)) {
@@ -38,7 +86,11 @@
     }
 
     /* navigation grey and no margin */
-    header {
+    nav {
+        background-color: #f8f9fa;
+        margin: 0;
+    }
+    nav header {
         /* center inner h1 vertically and horizontally */
         display: flex;
         justify-content: center;
@@ -56,6 +108,13 @@
         color: black;
     }
 
+    header hr {
+        /* no border */
+        border: none;
+        width: 100%;
+    }
+
+
     /* for printing, make padding higher and fontsize smaller */
     @media print {
         html {
@@ -63,4 +122,5 @@
             font-size: 10pt !important;
         }
     }
+
 </html>

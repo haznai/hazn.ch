@@ -7,6 +7,9 @@ const site = lume({
   }
 );
 
+// access to file tree
 site.use(nav());
+// copy and host fonts
+site.copy("_includes/fonts");
 
 export default site;
