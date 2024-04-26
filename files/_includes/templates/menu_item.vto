@@ -1,0 +1,17 @@
+<!-- dsiplays a recursive file tree -->
+{{ item.title }}
+{{ if item.data }}
+  <a href="{{ item.data.url }}">
+    {{ item.data.basename }}
+  </a>
+{{ else }}
+  <span>{{ item.slug }}</span>
+{{ /if }}
+
+<ul>
+  {{ for child of item.children }}
+  <li>
+    {{ include "templates/menu_item.vto" { item: child } }}
+  </li>
+  {{ /for }}
+</ul

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <header>
+            <h1 ><a href="/">hazn's growth machine ⚙️✨</a></h1>
+        </header>
+        <hr>
+    </nav>
+    <!-- Main Content -->
+    <ul class="menu">
+  
+    <li>
+      <!-- dsiplays a recursive file tree -->
+
+
+  <span>editing</span>
+
+
+<ul>
+  
+  <li>
+    <!-- dsiplays a recursive file tree -->
+
+
+  <a href="/editing/inc_reading_workflow/">
+    inc_reading_workflow
+  </a>
+
+
+<ul>
+  
+</ul
+
+  </li>
+  
+</ul
+
+    </li>
+  
+    <li>
+      <!-- dsiplays a recursive file tree -->
+
+
+  <span>transcripts</span>
+
+
+<ul>
+  
+  <li>
+    <!-- dsiplays a recursive file tree -->
+
+
+  <a href="/transcripts/sivers_on_clearer_thinking/">
+    sivers_on_clearer_thinking
+  </a>
+
+
+<ul>
+  
+</ul
+
+  </li>
+  
+</ul
+
+    </li>
+  
+</ul>
+
+</body>
+<style>
+    /* basic setup */
+    html {
+        max-width: 70ch;
+        line-height:1.75;
+        font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+        font-weight: normal;
+        /* hack to make scrollbar appear on all pages */
+        height: 101%;
+        /* larger spacing on larger screens, very small spacing on tiny screens */
+        /* shorthand for margin-left/margin-right */
+        margin-inline: auto;
+        /* fluid sizing: https://frontaid.io/blog/fluid-typography-2d-css-locks-clamp/ */
+        font-size: clamp(1.25em, 0.909em + 0.45vmin, 1.5em);
+        /* use system font stack: https://developer.mozilla.org/en-US/docs/Web/CSS/font-family */
+    }
+
+    /* increase line-height for everything except headings */
+    body :not(:is(h1,h2,h3,h4,h5,h6)) {
+      line-height: 1.75;
+    }
+
+    /* navigation grey and no margin */
+    header {
+        /* center inner h1 vertically and horizontally */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* no margin */
+        margin: 0;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    header a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* for printing, make padding higher and fontsize smaller */
+    @media print {
+        html {
+            padding: 6em;
+            font-size: 10pt !important;
+        }
+    }
+</html>

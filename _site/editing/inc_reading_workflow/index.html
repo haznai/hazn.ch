@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <header>
+            <h1 ><a href="/">hazn's growth machine ⚙️✨</a></h1>
+        </header>
+        <hr>
+    </nav>
+    <!-- Main Content -->
+    <h2>current workflow 2024-01-04</h2>
+<p>before incremental reading, i set a learning process and an outcome goal.
+starting with the outcome goal is a good idea, because setting an intention changes the way you read.
+setting a learning process should be in service of the goal.
+most importantly: there's no one size fits all.
+staying flexible and undogmatic is the only way to go.
+if there's a better approach, adapt it immediately.
+for example, sometimes it's important that your incremental reading sticks to the literature, especially when creating flashcards is an outcome goal.
+however, sometimes it's good to ponder and tinker around a bit.
+there's usually three outcome goals i'm aiming for:</p>
+<ul>
+<li>creating flashcards 🧠</li>
+<li>creating an evergreen note 🌱</li>
+<li>creating actionables ⚡️</li>
+</ul>
+<p>keep your incremental reading as distraction-free as possible; internally and externally.
+for me, thinking if this is a good question or note is very distracting.
+therefore, i just write, write, write, i can edit or remove the questions later.
+it's okay if your notes are messy, just focus on output in this phase.</p>
+<p>i then usually have a scratchpad besides me.
+nothing can replace pen and paper.
+write down questions and answers in &quot;Q:&quot;, &quot;A:&quot; pairs.
+write down remarks with &quot;R:&quot;, notes with &quot;N:&quot;.
+while writing down, ask yourself three questions: &quot;why does this work?&quot;, &quot;what are the implications of this?&quot; and &quot;can i view this concept from a different lens?&quot;.
+these three questions will be the motor of your thinking.
+once you start writing, don't stop until you feel like you answered the questions.
+never prefilter.
+asking why over and over again is a powerful method to get to the quintessence of something.
+when done with the first iteration of incremental reading: transfer the notes to obsidian</p>
+<p>while transfering, i do basic editing.
+mostly just rephrasing a little, like giving new sentence starters for the question prompt:</p>
+<ul>
+<li>&quot;define&quot;
+<ul>
+<li>formal</li>
+</ul>
+</li>
+<li>&quot;conceptualize&quot;
+<ul>
+<li>informal</li>
+<li>verb flashcards</li>
+</ul>
+</li>
+<li>&quot;describe&quot;
+<ul>
+<li>verb flashcardsa</li>
+</ul>
+</li>
+<li>&quot;analogize&quot;</li>
+<li>&quot;why&quot;/&quot;intuit&quot;
+<ul>
+<li>adjective-like flashcards</li>
+</ul>
+</li>
+<li>&quot;summarize&quot;
+<ul>
+<li>one sentence that nails it</li>
+<li>can be almost aphorisms</li>
+</ul>
+</li>
+<li>&quot;what&quot;/&quot;which&quot;
+<ul>
+<li>noun flashcards</li>
+</ul>
+</li>
+<li>&quot;when&quot;
+<ul>
+<li>r: not sure if to keep this, maybe having less starting words and less concepts is a better way of thinking
+- argument for: i deeply like constraints and pass based workflows, where the &quot;when&quot; is of deep importance</li>
+</ul>
+</li>
+</ul>
+<p>the actual editing then happens in the anki application.
+when edititing, i ask myself the questions:</p>
+<ul>
+<li>&quot;can i reverse this question?&quot;</li>
+<li>&quot;can i explain this concept from a different lens?&quot;
+imporant to remember: redundancy is good
+i usually don't allow myself to add cards while reviewing, but when reviewing new cards, it's ok.
+also, i make use of llms to generate new question and answer pairs.</li>
+</ul>
+<h2>2024-04-09: brain dump</h2>
+<p>having had some months with this workflow, i realized that it's quite important.
+however, i should focus on finishing what i start and actually achieving the outcome goals.
+only then does a workflow make sense, if you finish something.
+and then start again.
+once you've finished something.</p>
+<p>adopting a right-to-left mindset is super helpful.
+i have a bunch of loose thoughts, half-written evergreens that are in desperate need of editing.
+i love just dumping all my thoughts.
+which is awesome, but editing is important to clarify what you are saying and thinking.
+or rather, what you are not ssaying and thinking.
+my writing is maximalism.
+my editing should be minimalism.</p>
+<h2>2024-04-19 first editing iteration</h2>
+<p>preamble</p>
+<ul>
+<li>intended audience: me, someone who wants to garden this document to get better at incremental reading</li>
+<li>main points currently:
+<ul>
+<li>set a learning goal and process</li>
+<li>don't dogmatize it, be dynamic</li>
+</ul>
+</li>
+</ul>
+
+</body>
+<style>
+    /* basic setup */
+    html {
+        max-width: 70ch;
+        line-height:1.75;
+        font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+        font-weight: normal;
+        /* hack to make scrollbar appear on all pages */
+        height: 101%;
+        /* larger spacing on larger screens, very small spacing on tiny screens */
+        /* shorthand for margin-left/margin-right */
+        margin-inline: auto;
+        /* fluid sizing: https://frontaid.io/blog/fluid-typography-2d-css-locks-clamp/ */
+        font-size: clamp(1.25em, 0.909em + 0.45vmin, 1.5em);
+        /* use system font stack: https://developer.mozilla.org/en-US/docs/Web/CSS/font-family */
+    }
+
+    /* increase line-height for everything except headings */
+    body :not(:is(h1,h2,h3,h4,h5,h6)) {
+      line-height: 1.75;
+    }
+
+    /* navigation grey and no margin */
+    header {
+        /* center inner h1 vertically and horizontally */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* no margin */
+        margin: 0;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    header a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* for printing, make padding higher and fontsize smaller */
+    @media print {
+        html {
+            padding: 6em;
+            font-size: 10pt !important;
+        }
+    }
+</html>

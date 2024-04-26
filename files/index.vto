@@ -1,0 +1,7 @@
+<ul class="menu">
+  {{ for item of nav.menu().children }}
+    <li>
+      {{ include "templates/menu_item.vto" { item } }}
+    </li>
+  {{ /for }}
+</ul>
