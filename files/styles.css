@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "GeistMono";
+    src: url("/fonts/GeistMono-Medium.woff2") format("woff2");
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "GeistMono";
+    src: url("/fonts/GeistMono-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-display: swap;
+}
+
+/* basic setup */
+html {
+    max-width: 80rem;
+    line-height: 1.75;
+    font-family: "GeistMono", ui-monospace, "Cascadia Code", "Source Code Pro",
+        Menlo, Consolas, "DejaVu Sans Mono", monospace;
+    font-weight: normal;
+    /* hack to make scrollbar appear on all pages */
+    height: 101%;
+    /* center  conent */
+    margin: 0;
+    margin-inline: auto;
+    /* fluid sizing: https://frontaid.io/blog/fluid-typography-2d-css-locks-clamp/ */
+    font-size: clamp(1.25em, 0.909em + 0.45vmin, 1.5em);
+    /* no padding, no margin */
+    padding: 0;
+}
+html body {
+    /* no margin */
+    margin: 0;
+}
+
+/* increase line-height for everything except headings */
+body :not(:is(h1, h2, h3, h4, h5, h6)) {
+    line-height: 1.75;
+}
+
+/* navigation grey and no margin */
+nav {
+    background-color: #f8f9fa;
+    margin: 0;
+}
+nav header {
+    /* center inner h1 vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* no margin */
+    margin: 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header hr {
+    /* no border */
+    border: none;
+    width: 100%;
+}
+
+/* for printing, make padding higher and fontsize smaller */
+@media print {
+    html {
+        padding: 6em;
+        font-size: 10pt !important;
+    }
+}
