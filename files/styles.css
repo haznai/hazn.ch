@@ -2,13 +2,13 @@
     font-family: "GeistMono";
     src: url("/fonts/GeistMono-Medium.woff2") format("woff2");
     font-weight: normal;
-    font-display: swap;
+    font-display: optional;
 }
 @font-face {
     font-family: "GeistMono";
     src: url("/fonts/GeistMono-Bold.woff2") format("woff2");
     font-weight: bold;
-    font-display: swap;
+    font-display: optional;
 }
 
 /* basic setup */
